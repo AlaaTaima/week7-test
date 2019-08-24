@@ -6,5 +6,5 @@ CREATE TABLE cities (
     city VARCHAR NOT NULL
 );
 
-INSERT INTO cities(name,city) VALUES ('Alaa','Gaza'),('Saja','Khanyounis');
+INSERT INTO cities(name,city) VALUES ('alaa','Gaza'),('saja','Khanyounis');
 COMMIT;

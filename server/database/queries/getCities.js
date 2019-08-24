@@ -4,4 +4,5 @@ const getData = () => {
   return connection.query(`SELECT * FROM cities;`);
 };
 
+
 module.exports = getData;
