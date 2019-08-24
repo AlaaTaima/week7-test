@@ -5,5 +5,5 @@ const connection = require('./connection');
 const data = readFileSync(join(__dirname,'build.sql')).toString();
 
 connection.query(data)
-.then(res=> console.log('your Database is built successfully', res.rows))
+.then(res=> console.log('your Database is built successfully'))
 .catch(error=> console.log(error.stack))

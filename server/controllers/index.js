@@ -13,7 +13,7 @@ router.get('/cities', (req, res) => {
 
 router.post('/add-city', (req, res) => {
     postData(req.body)
-      .then(result => res.json(result.rows))
+      .then(results => res.json(results.rows))
       .catch(error => console.log(error.stack));
   });
   

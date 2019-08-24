@@ -3,7 +3,7 @@ const { Pool } = require('pg');
 
 require('env2')('./config.env');
 
-if (!process.env.DB_URL) throw new Error('No Database URL!!!');
+if (!process.env.DB_URL) throw new Error('Database URL Not Found!!');
 
 const options = {
   connectionString: process.env.DB_URL,
