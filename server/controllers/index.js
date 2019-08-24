@@ -7,7 +7,7 @@ const postData = require('../database/queries/addCity');
 
 router.get('/cities', (req, res) => {
   getData()
-    .then(result => res.json(result.rows))
+    .then(results => res.json(results.rows))
     .catch(error => console.log(error.stack));
 });
 
